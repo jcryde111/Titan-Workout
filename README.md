@@ -43,3 +43,10 @@ Titan continues to use the existing `TitanWorkoutV5` IndexedDB database so prior
 - Previous-workout values carry across Shortcut to Size weeks for the same workout slot.
 - Adds all Shortcut to Size exercises to the exercise library and substitution system.
 - Existing V6.3 users automatically replace the empty Shortcut to Size shell with the populated program without overwriting Lean Mass Builder.
+
+
+## V6.7 dashboard/navigation hotfix
+- Bottom navigation now highlights only the page currently being viewed.
+- Dashboard Last 30 Days and This Month counters use the completed-session timestamp rather than the date an old/in-progress session was first opened.
+- Completed history and calendar use the same completion-date logic so dashboard dates stay consistent.
+- Existing IndexedDB data is preserved.
