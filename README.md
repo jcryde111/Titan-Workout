@@ -1,3 +1,7 @@
+# Titan Workout PWA V6.6
+
+Hotfix release restoring startup initialization, program/workout selectors, and IndexedDB history loading. Existing TitanWorkoutV5 IndexedDB data is preserved.
+
 # Titan Workout PWA V6.5
 
 V6.5 corrects the training-page movement preview system.
