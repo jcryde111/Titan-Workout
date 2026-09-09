@@ -50,3 +50,10 @@ Titan continues to use the existing `TitanWorkoutV5` IndexedDB database so prior
 - Dashboard Last 30 Days and This Month counters use the completed-session timestamp rather than the date an old/in-progress session was first opened.
 - Completed history and calendar use the same completion-date logic so dashboard dates stay consistent.
 - Existing IndexedDB data is preserved.
+
+
+## V6.8 training render hotfix
+- Restored the missing workout render function that was accidentally dropped from V6.5-V6.7.
+- Program and workout selectors now render the selected workout exercises again.
+- Set inputs, previous-set references, exercise info, rest timers, substitutions, and autosave event handlers are reattached whenever a workout is opened.
+- Uses the same IndexedDB database and does not clear existing workout history.
