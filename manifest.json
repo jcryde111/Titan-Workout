@@ -1,7 +1,7 @@
 {
-  "name": "Titan Workout Tracker V6.4",
-  "short_name": "Titan V6.4",
-  "description": "Offline-first program-based workout tracker with Lean Mass Builder and the populated 12-week Shortcut to Size program.",
+  "name": "Titan Workout Tracker V6.5",
+  "short_name": "Titan V6.5",
+  "description": "Offline-first program-based workout tracker with Lean Mass Builder and the populated 12-week Shortcut to Size program and exercise-specific movement previews.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
