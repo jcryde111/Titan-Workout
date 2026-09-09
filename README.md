@@ -1,35 +1,31 @@
-# Titan Workout PWA V6.2
+# Titan Workout PWA V6.3
 
-Device-only hypertrophy workout app for Android, iPhone and desktop.
+Major training-experience update.
 
-## What is included
-- Device-only IndexedDB autosave
-- Unique workout sessions
-- Dashboard, calendar, history and PRs
-- Exercise details and hypertrophy cues
-- Curated embedded videos where a verified match was available
-- Targeted YouTube fallback for less-common variations
-- Offline workout logging (videos require internet)
-- Backup export/import
+## V6.3
+- Workout-session notes with local autosave.
+- Dashboard 30-day and current-month counters now count completed workouts only.
+- Workout duration is derived from actual set timestamps, preventing stale/open sessions from reporting multi-day durations.
+- Lightweight animated movement cues are shown on the main training page without downloading third-party GIF files.
+- Short-form exercise video search links and expanded form information.
+- Removed exercise Move Up / Move Down controls.
+- Substitution browser filters alternatives by the same muscle focus and by Gym / Hotel / Bodyweight.
+- Substitutions can be temporary for the current workout or saved as the program default.
+- Previous completed workout set values appear greyed beside the current weight/reps fields.
+- Exercise Library is organized by muscle focus and includes expanded location-aware alternatives.
+- Program Library / selector added. Lean Mass Builder contains the current four workouts.
+- Shortcut to Size program shell is selectable, but detailed copyrighted/source exercise pages were not reconstructed from web material. Re-add the original source/screenshots to populate it accurately.
+- Backup version 8 stores programs, notes, sessions and overrides.
 
-## Run locally on Windows
-1. Extract the ZIP.
-2. Open Terminal in the folder.
-3. Run `npx serve .`
-4. Open the displayed local address.
-
-For installation on a phone, deploy the folder to an HTTPS web host.
-
-
-## V6.1 testing features
-- Duplicate and customize workouts.
-- Substitute and reorder exercises.
-- Edit sets, rep targets, and rest periods.
-- Restore original workouts.
-- Custom programs are device-only and included in backups.
+## Storage
+Titan continues to use the existing `TitanWorkoutV5` IndexedDB database so prior logged sets and sessions remain available after upgrading.
 
 
-## V6.2 persistence fix
-- Restored missing autosave queue and pending-save flush functions.
-- Entries now save after typing, on change/blur, and before workout completion.
-- Service-worker cache bumped so deployed devices receive the repaired build.
+## V6.4 Shortcut to Size
+- Populates the full 12-week Shortcut to Size training schedule from the user-provided program PDF.
+- Includes all three phases and four weekly microcycles.
+- Workout selector is grouped by week.
+- Weeks 1-2 are marked rest-pause on the last set; weeks 3-4 are marked drop-set on the last set.
+- Previous-workout values carry across Shortcut to Size weeks for the same workout slot.
+- Adds all Shortcut to Size exercises to the exercise library and substitution system.
+- Existing V6.3 users automatically replace the empty Shortcut to Size shell with the populated program without overwriting Lean Mass Builder.

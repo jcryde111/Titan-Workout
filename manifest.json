@@ -1,7 +1,7 @@
 {
-  "name": "Titan Workout Tracker V6.2",
-  "short_name": "Titan V6.2",
-  "description": "Offline-first device-only workout tracker with autosave, unique sessions, backup/restore, analytics, and exercise guidance.",
+  "name": "Titan Workout Tracker V6.4",
+  "short_name": "Titan V6.4",
+  "description": "Offline-first program-based workout tracker with Lean Mass Builder and the populated 12-week Shortcut to Size program.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
